@@ -234,8 +234,11 @@ body {
         <button onclick="filterReviews('recommend', this)" class="filter-btn bg-white text-slate-600 border border-slate-200 text-[11px] px-3.5 py-1.5 rounded-full font-medium shadow-sm shrink-0 transition">🍰 ขนมอร่อยมาก (89)</button>
       </div>
 
-      <!-- ปุ่มเขียนรีวิวเฉพาะในหน้ารีวิว -->
-      <div class="flex justify-end">
+      <!-- ปุ่มดูรีวิวทั้งหมด (ซ้าย) และ ปุ่มเขียนรีวิว (ขวา) -->
+      <div class="flex justify-end gap-2">
+        <button onclick="switchTab('reviews'); showToast('คุณอยู่ที่หน้ารีวิวแล้วค่ะ');" class="px-3 py-1.5 bg-pastelPink text-softBrown text-xs font-bold rounded-xl shadow-sm hover:bg-rose-200 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-comments"></i> ดูรีวิวทั้งหมด
+        </button>
         <button onclick="openReviewModal()" class="px-3 py-1.5 bg-rose-500 text-white text-xs font-bold rounded-xl shadow-sm hover:bg-rose-600 transition flex items-center gap-1.5">
           <i class="fa-solid fa-pen"></i> เขียนรีวิวของคุณ
         </button>
